@@ -1,14 +1,13 @@
+//EMCAPSULAMENTO
 package entidades;
 
 public class Conta {
-
     private Integer identificador;
     private String titular;
     protected Double saldo;
-
+    //CONSTRUTOR PADRAO
     public Conta() {
-    }
-
+    }//CONSTRUTOR COM ARGUMENTOS
     public Conta(Integer identificador, String titular, Double saldo) {
         this.identificador = identificador;
         this.titular = titular;
@@ -45,7 +44,7 @@ public class Conta {
 
     @Override
     public String toString() {
-        return  identificador +
+        return  "$#"+identificador +
                 ", " + titular +
                 ", " + String.format("%.2f",saldo);
     }

@@ -1,5 +1,5 @@
 package entidades;
-
+//HERANÇA
 public class ContaNegocios extends Conta {
     private Double limiteEmprestimo;
 
